@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Authors>Ivvy</Authors>
@@ -21,8 +21,13 @@
     <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.3.1.11" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.1.0" />
-    <PackageReference Include="Ivvy.API" Version="0.56.0" />
     <PackageReference Include="Portable.BouncyCastle" Version="1.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Ivvy.API">
+      <HintPath>SDKs\Ivvy.API.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
